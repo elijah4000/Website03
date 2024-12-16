@@ -1,0 +1,450 @@
+:root {
+    color-scheme: light dark; /*light/dark mode*/
+    --primary: #009688;
+    --secondary: whitesmoke;
+    --neon: #3cdfff;
+    --light: #e3e7e5;
+    --dark: #191c27;
+   
+    /*Advanced css #1(light/dark mode)*/
+
+
+}
+
+
+a {
+    /* remove default underline for a tags*/
+    text-decoration: none;
+}
+
+/* imported font*/
+h1 {
+    font-family: "DM Serif Display", serif;
+}
+
+/*general*/
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+background-color: var(--secondary);
+    color: #263238;
+}
+
+
+#topBar {
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+header {
+    display: flex;
+ 
+    flex-direction: column;
+    align-items: center;
+}
+
+#italic {
+    font-style: italic;
+
+}
+
+
+header .logo {
+    width: 9em;
+    height: auto;
+    margin: 0;
+    float: right;
+    /*floated Image*/
+}
+
+/* Header text  */
+header h1,
+header h2
+
+
+    {
+        
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.Above-Links {
+    
+    color: light-dark(var(--dark), var(--light)); /*light/dark mode (syntax from MDN so assuming
+     the error is due to lack of updates */ 
+    font-style: italic;
+}
+
+/* Header links */
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* top navigation links  */
+.top-links {
+   
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.top-links {
+
+   
+    li {
+        display: inline-block;
+    }
+
+    li a {
+        text-decoration: none;
+        color: var(--secondary);
+        font-weight: bold;
+        padding: 7px;
+        background-color: #009688;
+        border-radius: 5px;
+        display: inline-block;
+    }
+}
+
+
+
+.top-links li a:active {
+    /*active Pseudo class affects the link while i'm pressing it*/
+  
+    background-color: #005f5f;
+    transform: scale(0.95);
+}
+
+
+
+
+/* Section styles */
+section.class {
+    text-align: center;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: light-dark(var(--light), var(--dark));   /*light/dark mode*/
+     border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*image links */
+section.class img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 3px solid #00796b;
+    height: 400px; 
+    object-fit: cover;
+    margin: 5px 0px;
+    
+}
+
+section.class p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #263238;
+    border: 2px solid #00796b;
+    padding: 10px;
+    background-color: #f1f8e9;
+}
+
+/* Footer  */
+footer {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+address,
+footer p,
+footer small {
+    margin: 10px 0;
+}
+
+address a,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-links li a {
+    background-color: var(--primary);
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.bottom-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul.bottom-links li {
+    margin: 10px 0;
+}
+
+
+ul.bottom-links a {
+
+    display: block;
+    padding: 15px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+#neon-text {
+    text-shadow: 0 0 10px var(--neon), 0 0 20px var(--neon), 0 0 30px var(--neon), 0 0 40px var(--neon); /* advanced css #2 neon text*/
+}
+#neon-text2 {
+    text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary), 0 0 40px var(--primary); 
+}
+#neon-text3 {
+    text-shadow: 0 0 10px var(--primary), 0 0 20px var(--neon), 0 0 30px var(--primary), 0 0 40px var(--neon); 
+}
+#neon-text4 {
+    text-shadow: 0 0 10px var(--neon), 0 0 20px var(--primary), 0 0 30px var(--neon), 0 0 40px var(--primary); 
+}
+
+
+h1 {
+    color: #263238;
+}
+.hours{ /*hours/Rates dont wanna reName and mess something up */
+    columns: 1;
+}
+section.hours {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+section.hours table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section.hours th,
+section.hours td {
+    padding: 10px;
+    border: 1px solid #00796b;
+}
+
+section.hours th {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+section.hours td {
+    background-color: var(--secondary);
+    color: #263238;
+}
+
+
+
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary);
+    color: #263238;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/*contact us page/form page*/
+
+fieldset {
+    border: 1px solid var(--primary);
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00796b;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    background-color: light-dark(var(--light), var(--dark));
+}
+h2.class {
+    text-align: center;
+    border: var(--primary) solid 4px;
+    padding: 0.1em;
+    margin: 0; 
+    background-color:light-dark(var(--light), var(--dark)) ;
+    color: light-dark(var(--dark), var(--light));
+}
+#link-paragraph a{
+    text-decoration: underline;  
+  }
+  
+
+
+#link-page {
+  column-count: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  background-color: lightgreen;
+  
+    
+  }
+  
+
+  #link-page li {
+    margin: 0 10px; 
+     list-style: armenian;
+    color: #000; 
+    
+  }
+ 
+.top-links li:not(:first-child) { /* advanced Css #3 :not pseudo class Excludes the first link in .top-links from having a margin */
+    margin-left: 10px;
+}
+ 
+
+      
+@media only screen and (min-width: 768px) {
+    section.class a img {
+        margin: 5px 70px;
+    } 
+    .top-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .top-links li {
+        margin: 0 10px;
+    }
+    ul.bottom-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    ul.bottom-links li {
+        margin: 0 10px;
+    }
+    section {
+        column-count: 2;
+    }
+    section.class p {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+    #smaller-font {
+        font-size: 1.5em;
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1225px) {
+    .top-links {
+      
+        padding: 0;
+        margin: 10px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .top-links li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    ul.bottom-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    ul.bottom-links li {
+        margin: 0 10px;
+    }
+    section.class img {
+        margin: 5px 70px;
+    }
+    section {
+        column-count: 1;
+    }
+    section.class p {
+        font-size: 2em;
+        margin-top: 50px;
+    }
+    #smaller-font {
+        font-size: 1.5em;
+        margin-top: 35px;
+    }
+}
+
+   
+
